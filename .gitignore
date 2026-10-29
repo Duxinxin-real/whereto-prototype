@@ -1,0 +1,8 @@
+.DS_Store
+output/
+*.zip
+location-html/backups/
+location-html/回退归档/
+location-html/screenshots/
+location-html/references/
+location-html/concepts/

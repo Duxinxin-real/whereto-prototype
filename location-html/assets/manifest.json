@@ -1,0 +1,685 @@
+{
+  "map-location": {
+    "source": "location.png",
+    "box": [
+      0,
+      253,
+      848,
+      1156
+    ],
+    "method": "unaltered rectangular crop"
+  },
+  "map-history": {
+    "source": "history.png",
+    "box": [
+      0,
+      253,
+      848,
+      890
+    ],
+    "method": "unaltered rectangular crop"
+  },
+  "sos-halo": {
+    "source": "emergency.png",
+    "box": [
+      104,
+      255,
+      744,
+      879
+    ],
+    "method": "unaltered rectangular crop"
+  },
+  "sos-bell": {
+    "source": "active.png",
+    "box": [
+      277,
+      250,
+      572,
+      546
+    ],
+    "method": "unaltered rectangular crop"
+  },
+  "home": {
+    "source": "location.png",
+    "box": [
+      43,
+      135,
+      140,
+      233
+    ],
+    "method": "unaltered rectangular crop"
+  },
+  "compass": {
+    "source": "location.png",
+    "box": [
+      711,
+      135,
+      808,
+      233
+    ],
+    "method": "unaltered rectangular crop"
+  },
+  "map-tools": {
+    "source": "location.png",
+    "box": [
+      711,
+      291,
+      811,
+      470
+    ],
+    "method": "unaltered rectangular crop"
+  },
+  "map-toolbar": {
+    "source": "location.png",
+    "box": [
+      253,
+      991,
+      603,
+      1118
+    ],
+    "method": "unaltered rectangular crop"
+  },
+  "chevron": {
+    "source": "location.png",
+    "box": [
+      615,
+      162,
+      657,
+      211
+    ],
+    "method": "unaltered rectangular crop"
+  },
+  "wifi": {
+    "source": "location.png",
+    "box": [
+      296,
+      1567,
+      341,
+      1609
+    ],
+    "method": "unaltered rectangular crop"
+  },
+  "refresh": {
+    "source": "location.png",
+    "box": [
+      443,
+      1565,
+      493,
+      1611
+    ],
+    "method": "unaltered rectangular crop"
+  },
+  "battery": {
+    "source": "location.png",
+    "box": [
+      613,
+      1568,
+      668,
+      1606
+    ],
+    "method": "unaltered rectangular crop"
+  },
+  "pin": {
+    "source": "location.png",
+    "box": [
+      299,
+      1510,
+      338,
+      1553
+    ],
+    "method": "unaltered rectangular crop"
+  },
+  "avatar-john": {
+    "source": "location.png",
+    "box": [
+      70,
+      1429,
+      246,
+      1609
+    ],
+    "method": "unaltered rectangular crop"
+  },
+  "avatar-john-small": {
+    "source": "activity.png",
+    "box": [
+      38,
+      113,
+      129,
+      208
+    ],
+    "method": "unaltered rectangular crop"
+  },
+  "avatar-emma": {
+    "source": "setup.png",
+    "box": [
+      76,
+      470,
+      184,
+      582
+    ],
+    "method": "unaltered rectangular crop"
+  },
+  "avatar-alex": {
+    "source": "setup.png",
+    "box": [
+      76,
+      624,
+      184,
+      736
+    ],
+    "method": "unaltered rectangular crop"
+  },
+  "avatar-john-setup": {
+    "source": "setup.png",
+    "box": [
+      76,
+      780,
+      184,
+      891
+    ],
+    "method": "unaltered rectangular crop"
+  },
+  "avatar-emma-tiny": {
+    "source": "emergency.png",
+    "box": [
+      75,
+      1089,
+      171,
+      1191
+    ],
+    "method": "unaltered rectangular crop"
+  },
+  "back": {
+    "source": "emergency.png",
+    "box": [
+      43,
+      134,
+      140,
+      231
+    ],
+    "method": "unaltered rectangular crop"
+  },
+  "calendar": {
+    "source": "history.png",
+    "box": [
+      709,
+      134,
+      808,
+      235
+    ],
+    "method": "unaltered rectangular crop"
+  },
+  "dots": {
+    "source": "activity.png",
+    "box": [
+      734,
+      124,
+      812,
+      198
+    ],
+    "method": "unaltered rectangular crop"
+  },
+  "composer-smile": {
+    "source": "activity.png",
+    "box": [
+      35,
+      1550,
+      147,
+      1658
+    ],
+    "method": "unaltered rectangular crop"
+  },
+  "composer-send": {
+    "source": "activity.png",
+    "box": [
+      703,
+      1546,
+      813,
+      1659
+    ],
+    "method": "unaltered rectangular crop"
+  },
+  "typing": {
+    "source": "activity.png",
+    "box": [
+      141,
+      1194,
+      277,
+      1268
+    ],
+    "method": "unaltered rectangular crop"
+  },
+  "device": {
+    "source": "activity.png",
+    "box": [
+      151,
+      166,
+      179,
+      200
+    ],
+    "method": "unaltered rectangular crop"
+  },
+  "battery-small": {
+    "source": "activity.png",
+    "box": [
+      293,
+      169,
+      335,
+      197
+    ],
+    "method": "unaltered rectangular crop"
+  },
+  "signal": {
+    "source": "activity.png",
+    "box": [
+      437,
+      169,
+      471,
+      200
+    ],
+    "method": "unaltered rectangular crop"
+  },
+  "event-unlock": {
+    "source": "activity.png",
+    "box": [
+      238,
+      495,
+      326,
+      583
+    ],
+    "method": "unaltered rectangular crop"
+  },
+  "event-battery": {
+    "source": "activity.png",
+    "box": [
+      238,
+      635,
+      327,
+      724
+    ],
+    "method": "unaltered rectangular crop"
+  },
+  "event-call": {
+    "source": "activity.png",
+    "box": [
+      239,
+      775,
+      328,
+      862
+    ],
+    "method": "unaltered rectangular crop"
+  },
+  "event-pin": {
+    "source": "activity.png",
+    "box": [
+      56,
+      916,
+      145,
+      1007
+    ],
+    "method": "unaltered rectangular crop"
+  },
+  "event-car": {
+    "source": "activity.png",
+    "box": [
+      56,
+      1060,
+      146,
+      1150
+    ],
+    "method": "unaltered rectangular crop"
+  },
+  "record-wifi": {
+    "source": "overview.png",
+    "box": [
+      89,
+      1003,
+      133,
+      1045
+    ],
+    "method": "unaltered rectangular crop"
+  },
+  "record-signal": {
+    "source": "overview.png",
+    "box": [
+      89,
+      1096,
+      133,
+      1136
+    ],
+    "method": "unaltered rectangular crop"
+  },
+  "record-call": {
+    "source": "overview.png",
+    "box": [
+      88,
+      1327,
+      138,
+      1379
+    ],
+    "method": "unaltered rectangular crop"
+  },
+  "record-open": {
+    "source": "overview.png",
+    "box": [
+      89,
+      1477,
+      139,
+      1535
+    ],
+    "method": "unaltered rectangular crop"
+  },
+  "record-sensitive": {
+    "source": "overview.png",
+    "box": [
+      86,
+      1574,
+      141,
+      1641
+    ],
+    "method": "unaltered rectangular crop"
+  },
+  "record-chevron": {
+    "source": "overview.png",
+    "box": [
+      745,
+      910,
+      777,
+      952
+    ],
+    "method": "unaltered rectangular crop"
+  },
+  "screen-phone": {
+    "source": "overview.png",
+    "box": [
+      713,
+      596,
+      760,
+      655
+    ],
+    "method": "unaltered rectangular crop"
+  },
+  "switch-icon": {
+    "source": "overview.png",
+    "box": [
+      588,
+      147,
+      639,
+      195
+    ],
+    "method": "unaltered rectangular crop"
+  },
+  "history-office": {
+    "source": "history.png",
+    "box": [
+      262,
+      1220,
+      358,
+      1320
+    ],
+    "method": "unaltered rectangular crop"
+  },
+  "history-market": {
+    "source": "history.png",
+    "box": [
+      262,
+      1387,
+      358,
+      1489
+    ],
+    "method": "unaltered rectangular crop"
+  },
+  "history-home": {
+    "source": "history.png",
+    "box": [
+      262,
+      1544,
+      358,
+      1648
+    ],
+    "method": "unaltered rectangular crop"
+  },
+  "walk": {
+    "source": "history.png",
+    "box": [
+      390,
+      1286,
+      421,
+      1324
+    ],
+    "method": "unaltered rectangular crop"
+  },
+  "clock": {
+    "source": "history.png",
+    "box": [
+      390,
+      1450,
+      424,
+      1483
+    ],
+    "method": "unaltered rectangular crop"
+  },
+  "play": {
+    "source": "history.png",
+    "box": [
+      631,
+      1108,
+      685,
+      1167
+    ],
+    "method": "unaltered rectangular crop"
+  },
+  "call-pink": {
+    "source": "emergency.png",
+    "box": [
+      297,
+      1458,
+      346,
+      1513
+    ],
+    "method": "unaltered rectangular crop"
+  },
+  "location-gray": {
+    "source": "emergency.png",
+    "box": [
+      255,
+      1583,
+      294,
+      1628
+    ],
+    "method": "unaltered rectangular crop"
+  },
+  "nav-overview": {
+    "source": "location.png",
+    "box": [
+      78,
+      1710,
+      143,
+      1784
+    ],
+    "method": "unaltered rectangular crop"
+  },
+  "nav-overview-active": {
+    "source": "overview.png",
+    "box": [
+      90,
+      1723,
+      159,
+      1823
+    ],
+    "method": "unaltered rectangular crop"
+  },
+  "nav-activity": {
+    "source": "location.png",
+    "box": [
+      231,
+      1711,
+      308,
+      1786
+    ],
+    "method": "unaltered rectangular crop"
+  },
+  "nav-activity-active": {
+    "source": "activity.png",
+    "box": [
+      230,
+      1724,
+      310,
+      1820
+    ],
+    "method": "unaltered rectangular crop"
+  },
+  "nav-location": {
+    "source": "overview.png",
+    "box": [
+      388,
+      1726,
+      460,
+      1803
+    ],
+    "method": "unaltered rectangular crop"
+  },
+  "nav-location-active": {
+    "source": "location.png",
+    "box": [
+      384,
+      1728,
+      465,
+      1806
+    ],
+    "method": "unaltered rectangular crop"
+  },
+  "nav-history": {
+    "source": "location.png",
+    "box": [
+      546,
+      1717,
+      617,
+      1782
+    ],
+    "method": "unaltered rectangular crop"
+  },
+  "nav-history-active": {
+    "source": "history.png",
+    "box": [
+      545,
+      1709,
+      617,
+      1806
+    ],
+    "method": "unaltered rectangular crop"
+  },
+  "sos-button": {
+    "source": "location.png",
+    "box": [
+      709,
+      1709,
+      792,
+      1793
+    ],
+    "method": "unaltered rectangular crop"
+  },
+  "setup-edit": {
+    "source": "setup.png",
+    "box": [
+      711,
+      1093,
+      761,
+      1141
+    ],
+    "method": "unaltered rectangular crop"
+  },
+  "setup-pin": {
+    "source": "setup.png",
+    "box": [
+      76,
+      1241,
+      180,
+      1345
+    ],
+    "method": "unaltered rectangular crop"
+  },
+  "setup-clock": {
+    "source": "setup.png",
+    "box": [
+      76,
+      1402,
+      180,
+      1506
+    ],
+    "method": "unaltered rectangular crop"
+  },
+  "setup-check": {
+    "source": "setup.png",
+    "box": [
+      703,
+      492,
+      773,
+      563
+    ],
+    "method": "unaltered rectangular crop"
+  },
+  "setup-unchecked": {
+    "source": "setup.png",
+    "box": [
+      703,
+      801,
+      773,
+      871
+    ],
+    "method": "unaltered rectangular crop"
+  },
+  "countdown-close": {
+    "source": "countdown.png",
+    "box": [
+      44,
+      145,
+      139,
+      240
+    ],
+    "method": "unaltered rectangular crop"
+  },
+  "countdown-settings": {
+    "source": "countdown.png",
+    "box": [
+      709,
+      145,
+      808,
+      243
+    ],
+    "method": "unaltered rectangular crop"
+  },
+  "countdown-ring": {
+    "source": "countdown.png",
+    "box": [
+      159,
+      340,
+      688,
+      878
+    ],
+    "method": "unaltered rectangular crop"
+  },
+  "active-location": {
+    "source": "active.png",
+    "box": [
+      76,
+      1347,
+      181,
+      1454
+    ],
+    "method": "unaltered rectangular crop"
+  },
+  "_notes": {
+    "icons": "Source-image crops; light/colored background keyed into alpha where needed. No icon library or redrawn icon artwork.",
+    "background": "dark-texture.png is generated blank header background; all foreground text and buttons are native HTML.",
+    "referenceCanvas": [
+      848,
+      1855
+    ]
+  },
+  "dark-texture": {
+    "source": "header-reference.png",
+    "method": "Built-in ImageGen background inpainting",
+    "prompt": "Remove all text, numbers, status icons, portraits and buttons. Preserve charcoal background, faint curved lines and rounded panel."
+  }
+}

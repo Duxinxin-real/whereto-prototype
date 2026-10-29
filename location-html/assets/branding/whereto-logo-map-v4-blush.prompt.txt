@@ -1,0 +1,2 @@
+Tool: built-in image_gen
+Edit the supplied WhereTo logo only by replacing the transparent background with a uniform solid very pale blush pink #FFF1F7 filling the entire square canvas, fully opaque. Preserve the existing pink location pin, folded map, white route, exact black WhereTo wordmark, all artwork, proportions, placement, colors and margins exactly. Do not redesign, restyle, add effects, change text or add any objects. Clean background compositing only.

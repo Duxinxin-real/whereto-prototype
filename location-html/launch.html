@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <title>WhereTo · 启动动画</title>
+  <style>
+    * { box-sizing: border-box; }
+    html, body { margin: 0; width: 100%; height: 100%; overflow: hidden; }
+    body { background: #000; font-family: -apple-system, BlinkMacSystemFont, sans-serif; }
+    iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; background: #000; }
+    .splash { position: fixed; left: var(--app-left); top: var(--app-top); width: var(--app-width); height: var(--app-height); border-radius: var(--app-radius); overflow: hidden; z-index: 2; display: grid; place-items: center; background: #fff1f7; }
+    .brand { width: 82%; margin-top: -10%; opacity: 0; transform: translateY(20px) scale(.94); }
+    .brand img { display: block; width: 100%; height: auto; }
+    .progress { position: absolute; bottom: 12%; width: 48px; height: 3px; border-radius: 3px; background: #f5d7e5; overflow: hidden; opacity: 0; }
+    .progress::after { content: ''; display: block; height: 100%; border-radius: inherit; background: #ff36a5; transform: scaleX(0); transform-origin: left; }
+    .running .brand { animation: arrive 950ms cubic-bezier(.18,.75,.25,1) 180ms forwards; }
+    .running .progress { animation: appear 350ms ease 700ms forwards; }
+    .running .progress::after { animation: load 1500ms cubic-bezier(.3,0,.2,1) 850ms forwards; }
+    .leaving { opacity: 0; transition: opacity 500ms ease; pointer-events: none; }
+    .replay { position: static; z-index: 3; right: 18px; bottom: max(18px, env(safe-area-inset-bottom)); border: 1px solid #edd3df; border-radius: 30px; padding: 10px 16px; color: #942250; background: #fff8fc; cursor: pointer; font: inherit; font-size: 13px; }
+    .replay:focus-visible { outline: 3px solid #ff36a5; outline-offset: 3px; }
+    .demo-controls { position: absolute; z-index: 3; left: calc(var(--app-left) + var(--app-width) + 28px); top: 42%; width: 190px; padding: 18px; border: 1px solid #383038; border-radius: 18px; background: #191619; color: #fff; }
+    .demo-controls h2 { font-size: 15px; margin: 0 0 10px; }
+    .demo-controls p, .demo-feedback { font-size: 12px; color: #c7b6c2; line-height: 1.6; }
+    .demo-feedback { display: block; margin: 12px 0; }
+    .receive-sos { width: 100%; border: 0; border-radius: 12px; padding: 13px 8px; background: #ff36a5; color: white; font: inherit; font-size: 14px; cursor: pointer; }
+    .receive-sos:disabled { opacity: .45; cursor: default; }
+    @media(max-width:900px) { html,body { overflow: auto; } .demo-controls { left: 50%; top: calc(var(--app-top) + var(--app-height) + 24px); transform: translateX(-50%); width: 260px; margin-bottom: 24px; } }
+    .demo-accounts { margin-top: 20px; padding-top: 18px; border-top: 1px solid #383038; }
+    .demo-accounts dl { margin: 0; }
+    .demo-accounts dt { margin-top: 16px; font-size: 14px; font-weight: 600; }
+    .demo-accounts dt span { font-size: 11px; color: #c7b6c2; font-weight: 400; }
+    .demo-accounts dd { margin: 6px 0 0; }
+    .demo-accounts code { font-size: 15px; color: #ff91c9; user-select: all; }
+    .demo-accounts small { display: block; margin-top: 6px; color: #c7b6c2; font-size: 11px; line-height: 1.6; }
+    @media(min-width:901px) { .demo-controls { top: 70px; max-height: calc(100vh - 94px); overflow-y: auto; } }
+    @keyframes arrive { to { opacity: 1; transform: translateY(0) scale(1); } }
+    @keyframes appear { to { opacity: 1; } }
+    @keyframes load { to { transform: scaleX(1); } }
+    @media (prefers-reduced-motion: reduce) {
+      .running .brand { animation: appear 200ms ease forwards; transform: none; }
+      .running .progress, .running .progress::after { animation: none; }
+      .leaving { transition-duration: 150ms; }
+    }
+  </style>
+</head>
+<body>
+  <iframe src="profile.html?onboarding=1" title="WhereTo 首页" inert></iframe>
+  <div class="splash" role="status" aria-label="WhereTo 正在启动">
+    <div class="brand"><img src="assets/branding/whereto-logo-map-v4-blush.png" alt="WhereTo" fetchpriority="high"></div>
+    <div class="progress" aria-hidden="true"></div>
+  </div>
+  <aside class="demo-controls" aria-label="演示操作区">
+    <h2>操作区</h2><p>模拟 Emma 发来紧急求助</p>
+    <button class="receive-sos" type="button" disabled>模拟收到 SOS</button>
+    <span class="demo-feedback" role="status">启动完成后可操作</span>
+    <button class="replay" type="button">重播启动动画</button>
+    <section class="demo-accounts" aria-label="演示账号">
+      <h2>演示账号</h2><p>添加用户时选择区号 <strong>+1</strong></p>
+      <dl>
+        <dt>Taylor <span>原有账号</span></dt><dd><code>88888888</code></dd>
+        <dt>Mia</dt><dd><code>2025550142</code><small>西雅图中央图书馆<br>Wi-Fi · 电量 91%</small></dd>
+        <dt>Ryan</dt><dd><code>2025550168</code><small>派克市场<br>移动网络 · 电量 68%</small></dd>
+      </dl>
+    </section>
+  </aside>
+  <script>
+    const splash = document.querySelector('.splash');
+    const app = document.querySelector('iframe');
+    const logo = document.querySelector('.brand img');
+    let exitTimer, hideTimer;
+    function fitSplash() {
+      // Match boot.js sizing and styles.css phone frame, in the embedded viewport.
+      const mobile = innerWidth <= 600;
+      const width = mobile ? innerWidth : Math.min(430, (innerHeight - 36) * 848 / 1855);
+      const root = document.documentElement.style;
+      root.setProperty('--app-width', width + 'px');
+      root.setProperty('--app-height', width * 1855 / 848 + 'px');
+      root.setProperty('--app-left', (innerWidth - width) / 2 + 'px');
+      root.setProperty('--app-top', mobile ? '0px' : '18px');
+      root.setProperty('--app-radius', width * 110 / 848 + 'px');
+    }
+    addEventListener('resize', fitSplash);
+    fitSplash();
+    function replay() {
+      clearTimeout(exitTimer);
+      clearTimeout(hideTimer);
+      app.inert = true;
+      document.querySelector('.receive-sos').disabled = true;
+      splash.hidden = false;
+      splash.style.display = 'grid';
+      splash.classList.remove('running', 'leaving');
+      void splash.offsetWidth;
+      splash.classList.add('running');
+      exitTimer = setTimeout(() => {
+        splash.classList.add('leaving');
+        app.inert = false;
+        document.querySelector('.receive-sos').disabled = false;
+        document.querySelector('.demo-feedback').textContent = '点击按钮，在手机内查看通知';
+        hideTimer = setTimeout(() => { splash.style.display = 'none'; splash.hidden = true; }, 550);
+      }, 2600);
+    }
+    document.querySelector('.replay').addEventListener('click', replay);
+    document.querySelector('.receive-sos').addEventListener('click', () => {
+      app.contentWindow.postMessage({type:'whereto-demo-sos'}, '*');
+      document.querySelector('.demo-feedback').textContent = '已触发通知，点击手机顶部通知查看';
+    });
+    logo.decode().catch(() => {}).then(replay);
+  </script>
+</body>
+</html>

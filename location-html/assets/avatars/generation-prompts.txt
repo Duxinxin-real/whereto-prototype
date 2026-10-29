@@ -1,0 +1,6 @@
+Tool: built-in image_gen
+Reference: ../profile-reference-avatar.png (style reference only)
+Shared prompt: Create one new default app avatar, using the supplied image ONLY as a style reference. Match its polished friendly 3D emoji character styling, large expressive eyes, front facing head and shoulders, soft studio lighting, clean rounded forms. Subject: [subject]. One centered bust inside a circle that fills the square canvas, entire hair visible, shoulders neatly contained within circle. No text, no props. Transparent outside the circular backdrop. Match reference proportions. Distinct original person, not the same identity.
+mia.png subject: young adult woman with a dark chin-length bob, warm medium skin, lavender shirt, pale lavender circular backdrop
+ryan.png subject: young adult man with short curly dark hair, deep brown skin, teal shirt, pale mint circular backdrop
+taylor.png subject: young adult person with short auburn hair, round glasses, light skin, blue shirt, pale blue circular backdrop
